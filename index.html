@@ -6,26 +6,32 @@
   <title>Ctrl-B</title>
   <style>
     body {
-      text-align: center;          /* centers content */
+      text-align: center;          /* center all content */
       font-family: Courier, sans-serif;
       margin: 20px;
       background-color: #f5f5f5;   /* optional light background */
     }
-    img2 {
-      max-width: 75%;
-      height: auto
+
+    /* Logo at top */
+    .logo {
+      max-width: 200px;            /* scale logo */
+      height: auto;                /* keep aspect ratio */
+      margin-bottom: 20px;         /* space below logo */
     }
 
-    
-    img {
-      max-width: 75%;              /* scales image proportionally */
-      height: auto;
-      border-radius: 8px;          /* optional rounded corners */
-      box-shadow: 0 4px 12px rgba(0,0,0,0.2); /* optional shadow */
+    /* Main image */
+    .main-img {
+      max-width: 90%;              /* responsive width */
+      height: auto;                /* preserve aspect ratio */
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+      margin-bottom: 20px;         /* space below main image */
     }
+
     h1 {
-      margin-top: 20px;
+      margin-top: 0;
     }
+
     p {
       max-width: 600px;
       margin: 10px auto 20px auto;
@@ -35,11 +41,15 @@
 </head>
 <body>
 
-  <img2 src="images/logo.gif">
-  <img src="images/ctrlb_basement.JPG" alt="Ctrl-B in basement">
- 
+  <!-- Logo at top -->
+  <img src="images/logo.gif" alt="Ctrl-B logo" class="logo">
 
- <p>Experimental electro-acoustic trio based in Portland, OR</p>
+  <!-- Main page image -->
+  <img src="images/ctrlb_basement.JPG" alt="Ctrl-B in basement" class="main-img">
+
+  <!-- Heading and description -->
+  <h1>Ctrl-B</h1>
+  <p>Experimental electro-acoustic trio based in Portland, OR</p>
 
 </body>
 </html>
