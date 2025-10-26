@@ -10,14 +10,14 @@
       padding: 0;
       font-family: Courier, sans-serif;
       text-align: center;
-      background-color: #fef1d3; /* manila color */
-      color: #000; /* text color if needed */
+      background-color: #fef1d3; /* manila background */
+      color: #000;
     }
 
-    /* Logo centered */
+    /* Logo */
     .logo {
       display: block;
-      margin: 40px auto 40px auto; /* spacing above and below */
+      margin: 40px auto 30px auto;
       max-width: 200px;
       height: auto;
     }
@@ -25,30 +25,61 @@
     /* Main image */
     .main-img {
       display: block;
-      margin: 0 auto 60px auto; /* spacing below main image */
+      margin: 0 auto 60px auto;
       max-width: 50%;
       height: auto;
       border-radius: 8px;
       box-shadow: 0 8px 20px rgba(0,0,0,0.2);
     }
 
-    /* Responsive adjustments */
-    @media (max-width: 768px) {
+    /* Optional caption or future text styling */
+    p {
+      max-width: 600px;
+      margin: 0 auto 60px auto;
+      line-height: 1.5;
+      font-size: 1rem;
+    }
+
+    /* Tablet and smaller screens */
+    @media (max-width: 1024px) {
       .logo {
-        max-width: 150px;
+        max-width: 160px;
+        margin: 30px auto 25px auto;
       }
+
+      .main-img {
+        max-width: 70%;
+        margin-bottom: 40px;
+      }
+
+      p {
+        font-size: 0.95rem;
+      }
+    }
+
+    /* Mobile phones */
+    @media (max-width: 600px) {
+      .logo {
+        max-width: 120px;
+        margin: 25px auto 20px auto;
+      }
+
       .main-img {
         max-width: 90%;
+        margin-bottom: 30px;
+      }
+
+      p {
+        font-size: 0.9rem;
+        line-height: 1.4;
+        margin: 0 20px 40px 20px;
       }
     }
   </style>
 </head>
 <body>
 
-  <!-- Logo centered at top -->
   <img src="images/logo.gif" alt="Ctrl-B logo" class="logo">
-
-  <!-- Main page image -->
   <img src="images/ctrlb_basement.JPG" alt="Ctrl-B in basement" class="main-img">
 
 </body>
