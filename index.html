@@ -11,31 +11,28 @@
       background-color: #f5f5f5;
     }
 
-    /* Container for header + content */
-    .container {
-      display: flex;
-      flex-direction: column;
-      align-items: center; /* center main content horizontally */
-      position: relative;
+    /* Logo in top-left corner */
+    .logo {
+      position: fixed;     /* stays at top-left even when scrolling */
+      top: 20px;
+      left: 20px;
+      max-width: 150px;   /* adjust size */
+      height: auto;
+      z-index: 10;         /* ensures it stays on top */
+    }
+
+    /* Main content */
+    .content {
+      text-align: center;
+      margin-top: 60px;    /* space below logo */
       padding: 20px;
     }
 
-    /* Logo top-left */
-    .logo {
-      position: absolute;
-      top: 20px;
-      left: 20px;
-      max-width: 150px;
-      height: auto;
-    }
-
-    /* Main image */
     .main-img {
       max-width: 50%;
       height: auto;
       border-radius: 8px;
       box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-      margin-top: 100px; /* space for logo */
       margin-bottom: 20px;
     }
 
@@ -45,15 +42,13 @@
 
     p {
       max-width: 600px;
-      text-align: center;
+      margin: 10px auto 20px auto;
       line-height: 1.5;
     }
 
-    /* Responsive adjustments */
     @media (max-width: 768px) {
       .main-img {
         max-width: 90%;
-        margin-top: 80px;
       }
       .logo {
         max-width: 120px;
@@ -63,15 +58,14 @@
 </head>
 <body>
 
-  <div class="container">
-    <!-- Logo top-left -->
-    <img src="images/logo.gif" alt="Ctrl-B logo" class="logo">
+  <!-- Logo top-left -->
+  <img src="images/logo.gif" alt="Ctrl-B logo" class="logo">
 
-    <!-- Main page image -->
+  <!-- Main content -->
+  <div class="content">
     <img src="images/ctrlb_basement.JPG" alt="Ctrl-B in basement" class="main-img">
-
-    <!-- Heading and description -->
-  <p>Experimental electro-acoustic trio based in Portland, OR</p>
+    <h1>Ctrl-B</h1>
+    <p>Experimental electro-acoustic trio based in Portland, OR</p>
   </div>
 
 </body>
