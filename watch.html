@@ -3,19 +3,34 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ctrl-B | Watch</title>
+  <title>Watch – ctrl-B</title>
   <style>
     body {
+      font-family: "Courier New", Courier, monospace;
       background-color: #FFFFF0;
-      font-family: Courier, sans-serif;
-      text-align: center;
+      color: #222;
       margin: 0;
-      padding: 40px 20px;
-      color: #000;
+      padding: 0;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
     }
 
-    h1 {
-      margin-bottom: 40px;
+    /* Header / Logo */
+    .logo {
+      display: block;
+      margin: 40px auto 30px auto;
+      max-width: 200px;
+      height: auto;
+    }
+
+    /* Main content */
+    main {
+      flex: 1;
+      padding: 20px;
+      max-width: 900px;
+      margin: 0 auto;
     }
 
     .video-container {
@@ -23,8 +38,7 @@
       flex-direction: column;
       align-items: center;
       gap: 40px;
-      max-width: 900px;
-      margin: 0 auto;
+      margin-top: 20px;
     }
 
     iframe {
@@ -36,48 +50,70 @@
       box-shadow: 0 4px 15px rgba(0,0,0,0.2);
     }
 
-    a.back-link {
-      display: inline-block;
-      margin-top: 60px;
-      padding: 10px 20px;
-      background-color: #222;
-      color: #fff;
-      text-decoration: none;
-      border-radius: 6px;
-      transition: background-color 0.3s ease;
+    /* Footer / navigation */
+    footer {
+      padding: 20px;
+      background: none;
     }
 
-    a.back-link:hover {
-      background-color: #444;
+    .nav-links {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: #000;
+      font-weight: bold;
+      border: 1px solid #000;
+      padding: 8px 16px;
+      border-radius: 4px;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    .nav-links a:hover {
+      background-color: #000;
+      color: #FFFFF0;
+    }
+
+    @media (max-width: 600px) {
+      main {
+        padding: 1rem;
+      }
+      iframe {
+        max-width: 100%;
+      }
     }
   </style>
 </head>
 <body>
 
-  <h1>Watch</h1>
+  <!-- Header -->
+  <header>
+    <img src="images/logo.gif" alt="Ctrl-B logo" class="logo">
+  </header>
 
-  <div class="video-container">
-    <!-- Replace VIDEO_ID_X below with your YouTube video IDs -->
-    <iframe 
-      src="https://www.youtube.com/embed/Xn2nhQ_AXK0" 
-      title="Live @ North View Gallery 10/23/2025" 
-      allowfullscreen>
-    </iframe>
+  <!-- Main content -->
+  <main>
+    <div class="video-container">
+      <!-- Replace the YouTube links with your actual video URLs -->
+      <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID_1" title="Live @ North View Gallery 10/23/2025" allowfullscreen></iframe>
+      <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID_2" title="Live @ Leaven Community Center 10/12/2024" allowfullscreen></iframe>
+      <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID_3" title="Live @ NO FUN 8/8/2024" allowfullscreen></iframe>
+    </div>
+  </main>
 
-    <iframe 
-      src="https://www.youtube.com/embed/pDEknaz-cMU" 
-      title="Live @ Leaven Community Center 10/12/2024" 
-      allowfullscreen>
-    </iframe>
-
-    <iframe 
-      src="https://www.youtube.com/embed/0Kl-4_iN31c" 
-      title="Live @ NO FUN 8/8/2025" 
-      allowfullscreen>
-    </iframe>
-  </div>
-
-  <a href="index.html" class="back-link">Back</a>
+  <!-- Footer -->
+  <footer>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="listen.html">Listen</a>
+      <a href="watch.html">Watch</a>
+      <a href="https://dl.dropboxusercontent.com/scl/fi/pohtkj5h24yzc2kb4tq1m/ctrlB_EPK.zip?rlkey=htie0crq8rhciz7pfubyfnzp2&st=l9ldvutl&raw=1">EPK</a>
+    </div>
+  </footer>
 
 </body>
 </html>
