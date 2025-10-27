@@ -35,37 +35,31 @@
       display: flex;
       justify-content: center;
       gap: 20px; /* space between buttons */
-      flex-wrap: wrap; /* keeps layout clean on mobile */
+      flex-wrap: wrap; /* responsive for small screens */
       margin-bottom: 60px;
     }
 
-    .watch-link,
-    .epk-link {
+    .nav-link {
       display: inline-block;
       padding: 12px 24px;
       border-radius: 6px;
-      font-weight: normal;
+      font-weight: bold;
       text-decoration: none;
+      color: #fff;
       transition: background-color 0.3s ease;
     }
 
-    .watch-link {
-      background-color: #222;
-      color: #fff;
-    }
+    .watch-link { background-color: #222; }
+    .watch-link:hover { background-color: #444; }
 
-    .watch-link:hover {
-      background-color: #444;
-    }
+    .epk-link { background-color: #0066cc; }
+    .epk-link:hover { background-color: #004c99; }
 
-    .epk-link {
-      background-color: #222;
-      color: #fff;
-    }
+    .about-link { background-color: #009966; }
+    .about-link:hover { background-color: #007a52; }
 
-    .epk-link:hover {
-      background-color: #444;
-    }
+    .listen-link { background-color: #cc6600; }
+    .listen-link:hover { background-color: #a65200; }
 
     @media (max-width: 600px) {
       .main-img {
@@ -80,8 +74,10 @@
   <img src="images/ctrlb_basement.JPG" alt="Ctrl-B performing in basement" class="main-img">
 
   <div class="button-container">
-    <a href="watch.html" class="watch-link">Watch</a>
-    <a href="https://dl.dropboxusercontent.com/scl/fi/pohtkj5h24yzc2kb4tq1m/ctrlB_EPK.zip?rlkey=htie0crq8rhciz7pfubyfnzp2&st=l9ldvutl&raw=1" class="epk-link">EPK</a>
+    <a href="about.html" class="nav-link about-link">About</a>
+    <a href="listen.html" class="nav-link listen-link">Listen</a>
+    <a href="watch.html" class="nav-link watch-link">Watch</a>
+    <a href="https://dl.dropboxusercontent.com/scl/fi/pohtkj5h24yzc2kb4tq1m/ctrlB_EPK.zip?rlkey=htie0crq8rhciz7pfubyfnzp2&st=l9ldvutl&raw=1" class="nav-link epk-link">EPK</a>
   </div>
 
 </body>
