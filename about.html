@@ -11,10 +11,13 @@
       color: #222;
       margin: 0;
       padding: 0;
-      line-height: 1.6;
       text-align: center;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
     }
 
+    /* Header / Logo */
     .logo {
       display: block;
       margin: 40px auto 30px auto;
@@ -22,15 +25,13 @@
       height: auto;
     }
 
+    /* Main content */
     main {
+      flex: 1;
+      padding: 20px;
       max-width: 800px;
       margin: 0 auto;
-      padding: 1rem 2rem 3rem;
       text-align: left;
-    }
-
-    h1 {
-      display: none;
     }
 
     p {
@@ -42,6 +43,33 @@
       text-decoration: underline;
     }
 
+    /* Footer / navigation */
+    footer {
+      padding: 20px;
+      background: none;
+    }
+
+    .nav-links {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: #000;
+      font-weight: bold;
+      border: 1px solid #000;
+      padding: 8px 16px;
+      border-radius: 4px;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    .nav-links a:hover {
+      background-color: #000;
+      color: #FFFFF0;
+    }
+
     @media (max-width: 600px) {
       main {
         padding: 1rem;
@@ -51,24 +79,40 @@
 </head>
 <body>
 
-  <img src="images/logo.gif" alt="Ctrl-B logo" class="logo">
+  <!-- Header -->
+  <header>
+    <img src="images/logo.gif" alt="Ctrl-B logo" class="logo">
+  </header>
 
+  <!-- Main content -->
   <main>
-    <p>The members of ctrl-B met while learning to navigate open-source coding platforms and DIY electronics in a community college class. Where it might lead, they weren't entirely sure, but it was fun figuring it out along the way. Their first performance came together under similar circumstances, and that spirit has shaped the project ever since. The experimental trio aims to create something beautiful in an ever-changing, unpredictable world, to roll with it when things fall apart, and to enjoy the process as it unfolds.</p>
+    <p>The members of ctrl-B met while learning to navigate open-source coding platforms and DIY electronics in a community college class. Where any of it might lead, no one was entirely sure, but it was fun figuring it out along the way. Their first performance came together under similar circumstances, and that spirit has shaped the project ever since. The experimental trio aims to create something beautiful in an ever-changing, unpredictable world, to roll with it when things fall apart, and to enjoy the process as it unfolds.</p>
 
-    <p>After nearly a year studying computer programming, microcontrollers, electronics, and sound design together, they found themselves challenged to participate in a large group installation that showcased their newly acquired skills. The brainstorming sessions that followed were wide-ranging and chaotic. There were too many ideas from too many voices that seemed to point nowhere. Eventually, Ben Engen, Candace Houston, and Brody Mennitto decided to lean on their growing friendship, break off into a smaller group, and compose a piece that combined their shared interests in electronics and experimentation with their backgrounds in performance.</p>
+    <p>After nearly a year studying computer programming, microcontrollers, electronics, and sound design together, they found themselves challenged to participate in a group installation that showcased their newly acquired skills. The brainstorming sessions that followed felt overwhelming and chaotic — too many ideas from too many voices that pointed nowhere. Eventually, Ben Engen, Candace Houston, and Brody Mennitto decided to lean on their growing friendship, break off into a smaller group, and compose a piece that combined their shared interests in electronics and experimentation with their backgrounds in performance.</p>
 
-    <p>For their first session together, percussionist Ben and violinist Candace brought their instruments. With nothing else available, Brody sat down at the piano in the room—and that was that. Their debut, part of student-led installation <em>The (Secret) Third Thing</em>, was a partially composed, partially improvised piece for piano, violin, drums, and a prototype electronically amplified chordophone. The performance was met with an enthusiastic response and encouragement to continue by their instructors and attendees alike. Since then, the trio has expanded its exploration of DIY electronics and abstract improvisation, landing somewhere between post-rock, jazz, classical, electronica, and the avant-garde. Today, they are making their mark in Portland’s experimental and noise scene.</p>
+    <p>For their first session together, percussionist Ben and violinist Candace brought their instruments. With nothing else available, Brody sat down at the piano in the room—and that was that. Their debut, part of student-led installation <em>The (Secret) Third Thing</em>, was a partially composed, partially improvised piece for piano, violin, drums, and a prototype electronically amplified chordophone. The performance was met with an enthusiastic response and encouragement to continue by their instructors and attendees alike. Since then, the trio has expanded its exploration of DIY electronics and abstract improvisation, landing somewhere between post rock, jazz, classical, electronica, and the avant-garde. Today, they are making their mark in Portland’s experimental and noise scene.</p>
 
     <p><strong>Ben Engen</strong>, an Oregon native, holds a Bachelor of Science in Percussion Instruments from Southern Oregon University, where he performed with symphonies, classical ensembles, and jazz bands. He later became known for his work as a drummer in the Seattle and Portland music scenes and continues to work professionally as an audio engineer. Ben is currently a member of the Portland metal/alt-rock duo Ritual Machine and is pursuing a career in electrical engineering.</p>
 
     <p><strong>Violinist Candace Houston</strong> was born in Southern California and grew up in Vancouver, WA, where she studied violin from a young age and performed in youth symphonies while attending the Vancouver School of Arts and Academics. After a brief period living and working in the southwestern U.S., she returned to Vancouver and began studying in the Music and Sonic Arts program at Portland Community College. Candace is an active multi-instrumentalist in Portland’s DIY punk scene and is working to launch her own veggie meat-alternative business.</p>
 
-    <p><strong>Pianist, occasional bassist, and noise-maker Brody Mennitto</strong> moved to Portland, OR from Pittsburgh, PA in 2007 and has since been active in the city’s DIY and punk communities. Largely self-taught, they have continued honing their craft since becoming a student at PCC and are currently pursuing a Bachelor of Science in Sonic Arts and Music Production at Portland State University. Brody is also a member of the post-hardcore trio Inny, and when not making music, they write, draw, go to shows, and watch a lot of movies.</p>
+    <p><strong>Pianist, occasional bassist, and noise-maker Brody Mennitto</strong> moved to Portland, OR from Pittsburgh, PA in 2007 and has since been active in the city’s DIY and punk communities. Largely self-taught, they have continued honing their craft since becoming a student at PCC and are currently pursuing a Bachelor of Science in Sonic Arts and Music Production at Portland State University. Brody is also a member of the post-hardcore trio Inny and spends a lot of time writing, drawing, and watching movies.</p>
 
     <p>The first recordings of ctrl-B were engineered by Evan Mersky at Red Lantern Studio in Portland and later mixed by the band in their home studio. Their debut album is scheduled for release in late 2026. In the meantime, recordings and videos of several performances can be found at <a href="http://www.ctrl-b-pdx.lol" target="_blank">www.ctrl-b-pdx.lol</a>.</p>
 
     <p>For booking, email <a href="mailto:ctrl.b.pdx@gmail.com">ctrl.b.pdx@gmail.com</a>.</p>
   </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="listen.html">Listen</a>
+      <a href="watch.html">Watch</a>
+      <a href="https://dl.dropboxusercontent.com/scl/fi/pohtkj5h24yzc2kb4tq1m/ctrlB_EPK.zip?rlkey=htie0crq8rhciz7pfubyfnzp2&st=l9ldvutl&raw=1">EPK</a>
+    </div>
+  </footer>
+
 </body>
 </html>
