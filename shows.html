@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shows – ctrl-B</title>
+  <style>
+    body {
+      font-family: "Courier New", Courier, monospace;
+      background-color: #FFFFF0;
+      color: #222;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    .logo {
+      display: block;
+      margin: 40px auto 30px auto;
+      max-width: 200px;
+      height: auto;
+    }
+
+    main {
+      flex: 1;
+      padding: 20px;
+      max-width: 800px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    p {
+      font-size: 1.2rem;
+      margin-top: 2rem;
+    }
+
+    footer {
+      padding: 20px;
+      background: none;
+    }
+
+    .nav-links {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: #000;
+      font-weight: bold;
+      border: 1px solid #000;
+      padding: 8px 16px;
+      border-radius: 4px;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    .nav-links a:hover {
+      background-color: #000;
+      color: #FFFFF0;
+    }
+
+    @media (max-width: 600px) {
+      main {
+        padding: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <img src="images/logo.gif" alt="Ctrl-B logo" class="logo">
+  </header>
+
+  <!-- Main content -->
+  <main>
+    <p>Upcoming shows will be listed here. Stay tuned!</p>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="listen.html">Listen</a>
+      <a href="watch.html">Watch</a>
+      <a href="shows.html">Shows</a>
+      <a href="https://dl.dropboxusercontent.com/scl/fi/pohtkj5h24yzc2kb4tq1m/ctrlB_EPK.zip?rlkey=htie0crq8rhciz7pfubyfnzp2&st=l9ldvutl&raw=1">EPK</a>
+    </div>
+  </footer>
+
+</body>
+</html>
